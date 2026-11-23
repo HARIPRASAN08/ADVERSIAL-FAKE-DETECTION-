@@ -10,3 +10,5 @@ End-to-end multi-modal AI platform for real-time fake account detection, SHAP ex
 ## Run Locally
 1. `pip install -r requirements.txt`
 2. `streamlit run app.py`
+
+https://adversial-fake-detection-git-npxcfnacn9tza2ospyzdg8.streamlit.app/
