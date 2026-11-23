@@ -1,0 +1,21 @@
+{
+  "production_model": "v2.0-adversarial-multimodal-ensemble",
+  "shadow_model": "v1.0-xgboost-multimodal",
+  "canary_traffic_split": 0.15,
+  "sla_latency_budget_ms": 1500.0,
+  "actual_avg_latency_ms": 0.018,
+  "fairness_audit": {
+    "Private Accounts Accuracy": 1.0,
+    "Public Accounts Accuracy": 0.9286,
+    "Accuracy Parity Gap": 0.0714,
+    "Private False Positive Rate": 0.0,
+    "Public False Positive Rate": 0.0
+  },
+  "redteam_scores": {
+    "1. Feature Noise Evasion": 0.8609,
+    "2. Bio/Handle Camouflage": 0.9565,
+    "3. Sleeper Account Mimicry": 0.9217,
+    "4. Graph Neighborhood Spoofing": 0.9565
+  },
+  "version": "v2.1.2"
+}

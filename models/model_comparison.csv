@@ -1,0 +1,7 @@
+Algorithm,Clean Accuracy,Adversarial Accuracy,Total Combined Accuracy,Precision,Recall,F1-Score,ROC-AUC,Latency (ms)
+Adversarial Meta-Ensemble (v2.1.2),94.78%,100.00%,97.39%,100.00%,89.47%,0.9444,0.9976,0.233
+XGBoost (Multi-Modal),93.91%,73.04%,83.48%,96.30%,91.23%,0.9369,0.9952,0.04
+Random Forest (Multi-Modal),91.30%,76.52%,83.91%,91.23%,91.23%,0.9123,0.9888,0.133
+Neural Network (MLP),89.57%,84.35%,86.96%,92.45%,85.96%,0.8909,0.9652,0.011
+Logistic Regression,91.30%,89.57%,90.43%,96.08%,85.96%,0.9074,0.987,0.008
+Continual Learner (SGD),92.17%,93.91%,93.04%,91.38%,92.98%,0.9217,0.9749,0.006

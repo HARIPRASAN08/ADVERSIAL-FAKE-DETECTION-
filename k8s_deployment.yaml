@@ -1,0 +1,29 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: fake-profile-detector-v2
+  labels:
+    app: fake-profile-detector
+    tier: inference
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: fake-profile-detector
+  template:
+    metadata:
+      labels:
+        app: fake-profile-detector
+    spec:
+      containers:
+      - name: detector-api
+        image: fake-profile-detector:v2.0-multimodal
+        ports:
+        - containerPort: 8501
+        resources:
+          requests:
+            cpu: "500m"
+            memory: "1Gi"
+          limits:
+            cpu: "2000m"
+            memory: "4Gi"
